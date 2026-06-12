@@ -38,7 +38,7 @@
     var onScroll = function () { nav.classList.toggle('scrolled', scrollY > 24); };
     addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
-    var here = (location.pathname.split('/').pop() || 'HomePage.html').toLowerCase();
+    var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     nav.querySelectorAll('.nav-links a').forEach(function (a) {
       var href = (a.getAttribute('href') || '').toLowerCase();
       if (href && href.indexOf('#') !== 0 && href === here) a.classList.add('active');
